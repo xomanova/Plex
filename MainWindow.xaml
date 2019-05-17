@@ -11,7 +11,7 @@
     <StackPanel>
         <TextBlock Text="Welcome, friend!" FontSize="40" />
         <TextBlock Text="Welcome, friend!" FontFamily="(StaticResource IBMPlexSansThin)" FontSize="40"/>
-        <TextBlock Text="Welcome, friend!" FontFamily="(StaticResource IBMPlexSansRegular)" FontSize="40"/>
+        
 
     </StackPanel>
 </Window>
