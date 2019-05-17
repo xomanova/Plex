@@ -10,7 +10,7 @@
         Title="MainWindow" Height="350" Width="525">
     <StackPanel>
         <TextBlock Text="Welcome, friend!" FontSize="40" />
-        <TextBlock Text="Welcome, friend!" FontFamily="(StaticResource IBMPlexSansThin)" FontSize="40"/>
+        <TextBlock Text="Welcome, friend!" FontFamily="(StaticResource IBMPlexSansThin)" FontSize="60"/>
         
 
     </StackPanel>
