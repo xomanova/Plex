@@ -6,11 +6,18 @@
         xmlns:local="clr-namespace:Plex"
         mc:Ignorable="d"
         WindowStyle="None"
+        AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="#262727"
+        x:Name="AppWindow"
         Icon="Images/Logo/pokeball.png"
-        Title="MainWindow" Height="350" Width="525">
-    <StackPanel>
-        <TextBlock Text="Welcome, friend!" FontFamily="{StaticResource IBMPlexSansRegular}" FontSize="40" />
-        <TextBlock Text="Welcome, friend!" FontFamily="{StaticResource IBMPlexSansLight}" FontSize="40"/>
-       
-    </StackPanel>
+        Title="Welcome, friend!" Height="600" Width="900">
+    <WindowChrome.WindowChrome>
+        <WindowChrome
+            ResizeBorderThickness="{Binding ResizeBorderThickness}"
+            />
+    </WindowChrome.WindowChrome>
+    <Grid>
+    </Grid>
 </Window>
