@@ -19,7 +19,7 @@ namespace Plex
         /// Call this to fire a <see cref="PropertyChanged"/>
         /// </summary>
         /// <param name="name"></param>
-        public void OnPropertyChange(string name)
+        public void OnPropertyChanged(string name)
         {
             PropertyChanged(this, new PropertyChangedEventArgs(name));
         }

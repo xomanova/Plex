@@ -33,7 +33,10 @@ namespace Plex
         /// </summary>
         public int ResizeBorder { get; set; } = 6;
 
-        public Thickness ResizeBorderThickness { get { return new Thickness(ResizeBorder); } }
+        /// <summary>
+        /// Thickness of the resize border around the window taking into account the outer margin
+        /// </summary>
+        public Thickness ResizeBorderThickness { get { return new Thickness(ResizeBorder + OuterMarginSize); } }
 
         /// <summary>
         /// The margin around the window for drop shadow
@@ -49,6 +52,11 @@ namespace Plex
                 mOuterMarginSize = value;
             }
         }
+
+        /// <summary>
+        /// The margin around the window for drop shadow
+        /// </summary>
+        public Thickness OuterMarginSizeThickness { get { return new Thickness(OuterMarginSize); } }
 
 
         /// <summary>
@@ -66,6 +74,17 @@ namespace Plex
             }
         }
 
+        /// <summary>
+        /// The radius of the edges of the window
+        /// </summary>
+        public CornerRadius WindowCornerRadius { get { return new CornerRadius(WindowRadius); } }
+
+        /// <summary>
+        /// The height of the title bar / caption sections
+        /// </summary>
+        public int TitleHeight { get; set; } = 42;
+
+
         #endregion
 
         #region Constructor
@@ -80,7 +99,12 @@ namespace Plex
             //Listen for the window resize
             mWindow.StateChanged += (sender, e) =>
             {
-
+                // Fire off events for all properties that are effected by a resizing
+                OnPropertyChanged(nameof(ResizeBorderThickness));
+                OnPropertyChanged(nameof(OuterMarginSize));
+                OnPropertyChanged(nameof(OuterMarginSizeThickness));
+                OnPropertyChanged(nameof(WindowRadius));
+                OnPropertyChanged(nameof(WindowCornerRadius));
             };
         }
 

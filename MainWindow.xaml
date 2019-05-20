@@ -8,7 +8,6 @@
         WindowStyle="None"
         AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
-        ResizeMode="NoResize"
         Background="#262727"
         x:Name="AppWindow"
         Icon="Images/Logo/pokeball.png"
@@ -16,6 +15,7 @@
     <WindowChrome.WindowChrome>
         <WindowChrome
             ResizeBorderThickness="{Binding ResizeBorderThickness}"
+            CaptionHeight="{Binding TitleHeight}"
             />
     </WindowChrome.WindowChrome>
     <Grid>
