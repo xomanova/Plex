@@ -7,4 +7,20 @@
     <FontFamily x:Key="IBMPlexSansThin">pack://application;,,,/Fonts/#IBM Plex Sans Thin</FontFamily>
     <FontFamily x:Key="IBMPlexSansBold">pack://application;,,,/Fonts/#IBM Plex Sans Bold</FontFamily>
 
+    <Style TargetType="{x:Type Control}" x:Key="BaseStyle">
+        <Setter Property="FontFamily" Value="{StaticResource IBMPlexSansLight}" />
+        <Setter Property="Foreground" Value="WhiteSmoke"/>
+    </Style>
+
+
+    <Style TargetType="{x:Type TextBlock}" x:Key="BaseTextBlockStyle">
+        <Setter Property="FontFamily" Value="{StaticResource IBMPlexSansLight}" />
+        <Setter Property="Foreground" Value="WhiteSmoke"/>
+    </Style>
+
+    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource BaseStyle}" />
+    <Style TargetType="{x:Type Label}" BasedOn="{StaticResource BaseStyle}" />
+    <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource BaseStyle}" />
+    <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}" />
+    <Style TargetType="{x:Type List}" BasedOn="{StaticResource BaseStyle}" />
 </ResourceDictionary>

@@ -46,3 +46,4 @@ C:\Users\Margaret\Documents\GitHub\Plex\obj\Debug\Plex.csproj.Fody.CopyLocal.cac
 C:\Users\Margaret\Documents\GitHub\Plex\obj\Debug\Plex.csproj.CopyComplete
 C:\Users\Margaret\Documents\GitHub\Plex\obj\Debug\Plex.exe
 C:\Users\Margaret\Documents\GitHub\Plex\obj\Debug\Plex.pdb
+C:\Users\Margaret\Documents\GitHub\Plex\obj\Debug\Plex.csprojAssemblyReference.cache
