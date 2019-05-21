@@ -71,6 +71,14 @@
                                         </Viewbox>
                                 
                                         
+                                        <!-- Window Buttons -->
+                                        <StackPanel Grid.Column="2" Orientation="Horizontal">
+                                            <Button Style="{StaticResource WindowControlButton}" Content="_"/>
+                                            <Button Style="{StaticResource WindowControlButton}" Content="[]"/>
+                                            <Button Style="{StaticResource WindowCloseButton}" Content="X"/>
+
+                                        </StackPanel>
+                                        
                                     </Grid>
                                     
                                 </Grid>
