@@ -20,6 +20,7 @@
                     <ControlTemplate TargetType="{x:Type Window}">
                         <!-- Outer border with the drop shadow margin-->
                         <Border Padding="{Binding OuterMarginSizeThickness, FallbackValue=10}">
+                            
                             <!-- This Grid is the main window outline-->
                             <Grid>
                                 
@@ -32,7 +33,7 @@
                                 </Border>
                                 
                                 <!-- The main window content -->
-                                <Grid>
+                                <Grid  Background="{StaticResource BackgroundDarkBrush}">
 
                                     <Grid.RowDefinitions>
                                         
