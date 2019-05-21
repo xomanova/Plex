@@ -64,8 +64,9 @@
                                         </Button>
                                         
                                         <!-- Title -->
+                                                                           
                                         <Viewbox Grid.Column="1" Margin="0" >
-                                            <TextBlock Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Title, FallbackValue='Welcome, friend!'}"/>
+                                            <TextBlock Style="{StaticResource HeaderText}" Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Title, FallbackValue='Welcome, friend!'}"/>
                                         </Viewbox>
                                 
                                         
