@@ -139,7 +139,7 @@ namespace Plex
             };
 
             // Create commands
-            MinimizeCommand = new RelayCommand(() => mWindow.WindowState = WindowState.Maximized);
+            MinimizeCommand = new RelayCommand(() => mWindow.WindowState = WindowState.Minimized);
             MaximizeCommand = new RelayCommand(() => mWindow.WindowState ^= WindowState.Maximized);
             CloseCommand = new RelayCommand(() => mWindow.Close());
             MenuCommand = new RelayCommand(() => SystemCommands.ShowSystemMenu(mWindow, GetMousePosition()));
