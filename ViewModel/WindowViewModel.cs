@@ -31,6 +31,17 @@ namespace Plex
 
         #region Public Properties
 
+
+        /// <summary>
+        /// smallest width
+        /// </summary>
+        public double WindowMinimunWidth { get; set; } = 400;
+        /// <summary>
+        /// Smallest height
+        /// </summary>
+        public double WindowMinimunHeight { get; set; } = 400;
+
+
         /// <summary>
         /// The size of the resize border around the window
         /// </summary>
