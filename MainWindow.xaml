@@ -40,8 +40,6 @@
                                         
                                         <!--Title Bar-->
                                         <RowDefinition Height="{Binding TitleHeightGridLength, FallbackValue=42}"/>
-                                        <!--Drop Shadow-->
-                                        <RowDefinition Height="Auto"/>
                                         <!--Window Content-->
                                         <RowDefinition Height="*"/>
 
@@ -82,6 +80,11 @@
                                         
                                     </Grid>
                                     
+                                    
+                                    <!-- Page Content -->
+                                    <Border Grid.Row="1" Padding="{Binding InnerContentPadding}">
+                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                    </Border>
                                 </Grid>
                             </Grid>
                         </Border>
@@ -99,7 +102,7 @@
             CornerRadius="0"
             />
     </WindowChrome.WindowChrome>
-    <Grid>
-        
+    <Grid Background="Gray">
+        <Frame x:Name="MainFrame" Content="{Binding CurrentPage}"/>
     </Grid>
 </Window>

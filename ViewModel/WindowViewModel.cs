@@ -48,6 +48,11 @@ namespace Plex
         public int ResizeBorder { get; set; } = 6;
 
         /// <summary>
+        /// The padding of the inner content padding
+        /// </summary>
+        public Thickness InnerContentPadding { get { return new Thickness(ResizeBorder); } }
+
+        /// <summary>
         /// Thickness of the resize border around the window taking into account the outer margin
         /// </summary>
         public Thickness ResizeBorderThickness { get { return new Thickness(ResizeBorder + OuterMarginSize); } }
@@ -155,6 +160,9 @@ namespace Plex
             CloseCommand = new RelayCommand(() => mWindow.Close());
             MenuCommand = new RelayCommand(() => SystemCommands.ShowSystemMenu(mWindow, GetMousePosition()));
 
+
+            // Fix window resize issue
+            var Resizer = new WindowResizer(mWindow);
         }
 
         #endregion
