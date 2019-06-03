@@ -61,7 +61,7 @@ namespace Plex
         /// <param name="parameter"></param>
         public void Execute(object parameter)
         {
-            throw new NotImplementedException();
+            mAction();
         }
 
         #endregion

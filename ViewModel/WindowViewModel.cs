@@ -31,10 +31,26 @@ namespace Plex
 
         #region Public Properties
 
+
+        /// <summary>
+        /// smallest width
+        /// </summary>
+        public double WindowMinimunWidth { get; set; } = 400;
+        /// <summary>
+        /// Smallest height
+        /// </summary>
+        public double WindowMinimunHeight { get; set; } = 400;
+
+
         /// <summary>
         /// The size of the resize border around the window
         /// </summary>
         public int ResizeBorder { get; set; } = 6;
+
+        /// <summary>
+        /// The padding of the inner content padding
+        /// </summary>
+        public Thickness InnerContentPadding { get { return new Thickness(ResizeBorder); } }
 
         /// <summary>
         /// Thickness of the resize border around the window taking into account the outer margin
@@ -90,6 +106,10 @@ namespace Plex
 
         public GridLength TitleHeightGridLength { get { return new GridLength(TitleHeight + ResizeBorder); } }
 
+        /// <summary>
+        /// Set Current Page
+        /// </summary>
+        public ApplicationPage CurrentPage { get; set; } = ApplicationPage.Login;
 
         #endregion
 
@@ -144,6 +164,9 @@ namespace Plex
             CloseCommand = new RelayCommand(() => mWindow.Close());
             MenuCommand = new RelayCommand(() => SystemCommands.ShowSystemMenu(mWindow, GetMousePosition()));
 
+
+            // Fix window resize issue
+            var Resizer = new WindowResizer(mWindow);
         }
 
         #endregion
