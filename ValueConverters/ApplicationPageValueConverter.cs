@@ -17,7 +17,7 @@ namespace Plex
             {
                 // Find the appropriate page
                 case ApplicationPage.Login():
-                    return new LoginPage();
+                    return new LoginPage();  // Needs Fixing 6/3/2019 -MR
 
                 default:
                     Debugger.Break();
