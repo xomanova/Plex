@@ -35,12 +35,7 @@ namespace Plex
         /// <returns></returns>
         public override object ProvideValue(IServiceProvider serviceProvider)
         {
-            if (mConverter == null)
-                mConverter = new T();
-
-            return mConverter;
-
-            // Shorthand of about: return mConverter ?? (mConverter = new T());
+            return mConverter ?? (mConverter = new T());
         }
         #endregion
 
