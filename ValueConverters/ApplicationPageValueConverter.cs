@@ -16,8 +16,8 @@ namespace Plex
             switch ((ApplicationPage)value)
             {
                 // Find the appropriate page
-                case ApplicationPage.Login():
-                    return new LoginPage();  // Needs Fixing 6/3/2019 -MR
+                case ApplicationPage.Login:
+                    return new LoginPage();
 
                 default:
                     Debugger.Break();
