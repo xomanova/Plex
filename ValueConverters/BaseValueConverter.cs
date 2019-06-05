@@ -53,7 +53,7 @@ namespace Plex
         public abstract object Convert(object value, Type targetType, object parameter, CultureInfo culture);
 
         /// <summary>
-        /// The method to cownvert a value back to its source type
+        /// The method to clown-vert a value back to its source type
         /// </summary>
         /// <param name="value"></param>
         /// <param name="targetType"></param>

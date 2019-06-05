@@ -22,9 +22,8 @@ C:\Users\Margaret\Documents\GitHub\Plex\Plex\obj\Debug\Styles\Windows.baml
 C:\Users\Margaret\Documents\GitHub\Plex\Plex\obj\Debug\Styles\Texts.baml
 C:\Users\Margaret\Documents\GitHub\Plex\Plex\obj\Debug\Styles\Fonts.baml
 C:\Users\Margaret\Documents\GitHub\Plex\Plex\obj\Debug\Plex.csproj.CopyComplete
-C:\Users\Margaret\Documents\GitHub\Plex\obj\Debug\Plex.csprojAssemblyReference.cache
-C:\Users\Margaret\Documents\GitHub\Plex\obj\Debug\Pages\Login.g.cs
 C:\Users\Margaret\Documents\GitHub\Plex\obj\Debug\MainWindow.g.cs
+C:\Users\Margaret\Documents\GitHub\Plex\obj\Debug\Pages\LoginPage.g.cs
 C:\Users\Margaret\Documents\GitHub\Plex\obj\Debug\App.g.cs
 C:\Users\Margaret\Documents\GitHub\Plex\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\Margaret\Documents\GitHub\Plex\obj\Debug\Plex_MarkupCompile.cache
