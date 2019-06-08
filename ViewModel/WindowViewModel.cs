@@ -27,6 +27,11 @@ namespace Plex
         /// </summary>
         private int mWindowRadius;
 
+        /// <summary>
+        /// The window dock position
+        /// </summary>
+        private WindowDockPosition mDockPosition;
+
         #endregion
 
         #region Public Properties
