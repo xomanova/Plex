@@ -8,16 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logo/backpack.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logo/bullbasaur.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logo/charmander.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logo/jigglypuff.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logo/pikachu.ico")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logo/pikachu.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logo/pokeball.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logo/psyduck.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logo/smartphone.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logo/snorlax.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logo/squirtle.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/backgrounds/transformersgradientbackground.png")]
 
 
