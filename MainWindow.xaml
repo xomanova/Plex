@@ -65,14 +65,15 @@
                                         
                                         <!-- Title -->
                                                                            
-                                        <Viewbox Grid.Column="0" Grid.ColumnSpan="3" Margin="0" >
+                                        <Viewbox Grid.Column="0" Grid.ColumnSpan="3" Margin="5" >
                                             <StackPanel>
-                                                <TextBlock FontFamily="{StaticResource IBMPlexSansBold}">
-                                                    <Run Text="C" Foreground="{StaticResource WordOrangeBrush}"/>
-                                                    <Run Text="H" Foreground="{StaticResource WordBlueBrush}"/>
-                                                    <Run Text="A" Foreground="{StaticResource WordRedBrush}"/>
-                                                    <Run Text="T" Foreground="{StaticResource WordGreenBrush}"/>
+                                                <TextBlock FontFamily="{StaticResource IBMPlexSansLight}" TextAlignment="Center" Margin="0,0,0,-5">
+                                                    <Run Text="P" Foreground="{StaticResource WordRedBrush}"/>
+                                                    <Run Text="L" Foreground="{StaticResource WordRedBrush}"/>
+                                                    <Run Text="E" Foreground="{StaticResource WordRedBrush}"/>
+                                                    <Run Text="X" Foreground="{StaticResource WordRedBrush}"/>
                                                 </TextBlock>
+                                                <TextBlock Text="by Flareon" FontFamily="{StaticResource IBMPlexSansThin}" Foreground="{StaticResource BackgroundLightestDarkBrush}" TextAlignment="Center"/>
                                             </StackPanel>
                                         </Viewbox>
                                 
@@ -90,7 +91,7 @@
                                     
                                     <!-- Page Content -->
                                     <Border Grid.Row="1" Padding="{Binding InnerContentPadding}">
-                                        <ContentPresenter Content="{TemplateBinding Content}"/>
+                                            <ContentPresenter Content="{TemplateBinding Content}" />
                                     </Border>
                                 </Grid>
                             </Grid>
